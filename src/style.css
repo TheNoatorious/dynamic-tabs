@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: #f7e2ff;
+}
+
+/* 
+ * TABS COMPONENT
+ */
+
+.tabs {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 4px;
+    filter: drop-shadow(rgba(122, 61, 143, 0.15) 0.5px 1px 1px)
+        drop-shadow(rgba(122, 61, 143, 0.15) 1px 2px 2px)
+        drop-shadow(rgba(122, 61, 143, 0.15) 2px 4px 4px)
+        drop-shadow(rgba(122, 61, 143, 0.15) 4px 8px 8px)
+        drop-shadow(rgba(122, 61, 143, 0.15) 8px 16px 16px);
+}
+
+/* 
+ * TABS LIST
+ */
+
+.tabs__items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #8e44ad77;
+}
+
+.tabs__item {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tabs__item a {
+    text-decoration: none;
+}
+
+/* 
+ * TABS CONTENT
+ */
+
+.tabs__content {
+    display: none;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.tabs__title {
+    margin-top: 0;
+}
+
+/* ============================================ **
+   MODIFIERS
+** ============================================ */
+
+.tabs__item--active {
+    border-bottom: 4px solid #8e44ad77;
+    color: #8e44ad;
+}
+
+.tabs__content--active {
+    display: flex;
+}
+
+/* 
+ * TABS COMPONENT 2
+ */
+
+.tabs--2 .tabs__items {
+    border-bottom: 1px solid #3498db77;
+}
+
+.tabs--2 .tabs__item--active {
+    color: #3498db;
+    border-bottom: 4px solid #3498db77;
+}
